@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Insert User</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Insert New User</h1>
+        <form method="post" action="/insert">
+            <div class="mb-3">
+                <label for="user_name" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="user_name" name="user_name" required>
+            </div>
+            <div class="mb-3">
+                <label for="birthyear" class="form-label">Birth Year</label>
+                <input type="number" class="form-control" id="birthyear" name="birthyear" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Insert User</button>
+        </form>
+    </div>
+</body>
+</html>

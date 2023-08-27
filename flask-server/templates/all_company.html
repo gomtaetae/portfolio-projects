@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Companys</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Companys</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Com ID</th>
+            <th>Com Name</th>
+            <th>Head Address</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for com in coms %}
+          <tr>
+            <td>{{ com['COM_ID'] }}</td>
+            <td>{{ com['COM_NAME'] }}</td>
+            <td>{{ com['HEAD_ADDRESS' ]}}</td>
+            <td>{{ com['PHONE' ]}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

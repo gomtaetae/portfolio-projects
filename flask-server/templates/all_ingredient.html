@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Ingredients</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ingredients</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Ing ID</th>
+            <th>Ing Name</th>
+            <th>Purpose1</th>
+            <th>Purpose2</th>
+            <th>Good</th>
+            <th>Bad</th>
+            <th>Rec Age</th>
+            <th>Rec InTakeTime</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for ing in ingredients %}
+          <tr>
+            <td>{{ ing['ING_ID'] }}</td>
+            <td>{{ ing['ING_NAME'] }}</td>
+            <td>{{ ing['PURPOSE1' ]}}</td>
+            <td>{{ ing['PURPOSE2' ]}}</td>
+            <td>{{ ing['GOOD' ]}}</td>
+            <td>{{ ing['BAD' ]}}</td>
+            <td>{{ ing['RED_AGE' ]}}</td>
+            <td>{{ ing['RED_INTAKETIME' ]}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

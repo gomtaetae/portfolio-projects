@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Medicines</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Medicines</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Med ID</th>
+            <th>Ingredient</th>
+            <th>Med Name</th>
+            <th>Price</th>
+            <th>Company</th>
+            <th>DeadLine</th>
+            <th>KeepMethod</th>
+            <th>InTakeMethod</th>
+            <th>InTakeWarn</th>
+            <th>Shape</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for med in medicines %} {**}
+          <tr>
+            <td>{{ med['MED_ID'] }}</td>
+            <td>{{ med['INGREDIENT'] }}</td>
+            <td>{{ med['MED_NAME' ]}}</td>
+            <td>{{ med['PRICE' ]}}</td>
+            <td>{{ med['COMPANY' ]}}</td>
+            <td>{{ med['DEADLINE' ]}}</td>
+            <td>{{ med['KEEPMETHOD' ]}}</td>
+            <td>{{ med['INTAKEMETHOD' ]}}</td>
+            <td>{{ med['INTAKEWARN' ]}}</td>
+            <td>{{ med['SHAPE' ]}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
