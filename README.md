@@ -1,5 +1,4 @@
 # portfolio-projects
-1차 프로젝트(미완)
 
 vue-client 폴더에 들어가서
 1. npm install
